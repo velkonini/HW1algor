@@ -63,16 +63,24 @@ def sum():
 
 # Задача 4
 def sum_of_elements():
-    x = int(input("Сколько элементов нужно сложить: "))
-    sum = 0
-    element = 1
-    while x > 0:
-        sum = element + (element / 2)
-        x -= 1
-        # element = element / 2
+    y = int(input("Сколько элементов нужно сложить: "))
+    s = 0
+    el = 1
+    while y > 0:
+        s += el
+        el = el / -2
+        y -= 1
+    print(s)
 
-    print(sum)
+# sum_of_elements()
 
-sum_of_elements()
+# Задача 7
+def equality_of_numbers(number):
+    numberTwo = 0
+    for i in range(1, number + 1):
+       numberTwo += i
+    number = number * (number + 1) // 2
+    print(number)
+    print(numberTwo)
 
-#
+# equality_of_numbers(234)
